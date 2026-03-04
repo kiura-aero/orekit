@@ -15,6 +15,20 @@ Scroll to the bottom for Prerequisites.
 - Add a **minimal HTTP endpoint** that serves the satellite’s current state as JSON (for Open MCT polling).
 - Include troubleshooting notes for **Hipparchus**, classpath issues, and orekit-data configuration.
 
+## `mathu.java`
+- Create a file > new > java
+    - Name the project
+    - Do not "create module info/java"
+- Add Orekit & Hipparchus `.jar`
+    - Click the new project > build project > configure Build Path
+    - Libraries > Module Path > Add External jars > Add all Orekit & Hipparchus files
+- Orekit data downloaded
+    - remove `main` from folder name
+- Create output folder
+- Create package and Java class
+    - Click `src` > new > package > "name"
+    - Clic package "name" > new > class > "name"
+
 > Paste the following into the dependencies section of the `pom.xml` file of the project. 
 ```java
 <dependencies>
